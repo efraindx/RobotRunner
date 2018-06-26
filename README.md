@@ -1,7 +1,7 @@
 # RobotRunner (Dependency Library)
 
 RobotRunner lets you run robots that you can build. Defining its back of strategies and commands. For run the Robot
-you need specify the Robot (RobotEnum) and its json schema, contains its map, start point, commands and its battery level.
+you need specify the Robot (RobotEnum) and its json schema, containing its map, start point, commands and its battery level.
 
 # RobotRunnerConsoleClient
 
@@ -16,7 +16,7 @@ the result json.
 
 # Test and Run
 
-Each project has a document describing how youn can Test and Run it. 
+Each project has a document describing how you can Test and Run it. 
 For all clients is required compile the RobotRunner Dependency Library, so you need first run this command in the project RobotRunner:
 
-mvn clean install
+`mvn clean install`
