@@ -1,5 +1,10 @@
 package com.example.robotrunner.robot.schema;
 
+/**
+ * 
+ * @author efraintoribioreyes
+ *
+ */
 public class Visited {
 
 	private int X;

@@ -3,6 +3,11 @@ package com.example.robotrunner.command;
 import com.example.robotrunner.constans.CommandConstants;
 import com.example.robotrunner.robot.Robot;
 
+/**
+ * 
+ * @author efraintoribioreyes
+ *
+ */
 public class AdvanceCommand extends ObstacleCommand {
 
 	public AdvanceCommand(Robot robot) {

@@ -5,6 +5,11 @@ import com.example.robotrunner.exceptions.StopRobotException;
 import com.example.robotrunner.robot.Robot;
 import com.example.robotrunner.robot.schema.Cleaned;
 
+/**
+ * 
+ * @author efraintoribioreyes
+ *
+ */
 public class CleanCommand extends Command {
 
 	public CleanCommand(Robot robot) {

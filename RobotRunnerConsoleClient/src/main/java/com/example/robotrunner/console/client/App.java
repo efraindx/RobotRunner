@@ -9,6 +9,11 @@ import java.io.IOException;
 import com.example.robotrunner.RobotRunner;
 import com.example.robotrunner.enums.RobotEnum;
 
+/**
+ * 
+ * @author efraintoribioreyes
+ *
+ */
 public class App {
 	public static void main(String[] args) {
 		String inputJson = getFileContent(args[0]);

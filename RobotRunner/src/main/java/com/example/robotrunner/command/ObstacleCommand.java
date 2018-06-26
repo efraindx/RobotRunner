@@ -30,19 +30,19 @@ public abstract class ObstacleCommand extends Command {
 		super.execute();
 		
 		if (commandHitsObstacle()) {
-			System.out.println("Iniciando strategy");
+			System.out.println("Starting strategy");
 			
 			BackOffStrategy commandStrategy = robot.getBackOffStrategy();
 			
 			List<Command> foundCommands = commandStrategy.findNextCommmands();
-			System.out.println("Lista comandos retornados:" + foundCommands);
+			System.out.println("Command list returned:" + foundCommands);
 			
 			for (Command command : foundCommands) {
 				command.execute();
 			}
 			
 			commandStrategy.resetStrategy();
-			System.out.println("Reiniciando strategy..");
+			System.out.println("Resetting strategy..");
 		} else {
 			
 			/**

@@ -5,6 +5,11 @@ import java.util.List;
 
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * 
+ * @author efraintoribioreyes
+ *
+ */
 public class RoombaResponse {
 
 	private List<Visited> visited;
