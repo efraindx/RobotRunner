@@ -23,7 +23,7 @@ of the robot and this will return another json with the response.
 Here is an image of an example, running this from Postman:
 
 # Example
-![example](/example.png)
+![example](example.png)
 
 # Test and Run with Docker
 
