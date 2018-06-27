@@ -40,6 +40,7 @@ Run this command in the project, this will build tha Docker's image:
 Now you need to tag and publish the image into the loca repository, with this command:
 
 `docker tag ${userName}/robotrunnerserviceclient:0.0.1 localhost {portDockerRegistry}/${userName}/robotrunnerserviceclient:0.0.1`
+
 `docker push localhost:portDockerRegistry/${userName}/robotrunnerserviceclient:0.0.1`
 
 And finally you need to run the docker image with this command:
