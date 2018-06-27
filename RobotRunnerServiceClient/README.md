@@ -27,24 +27,28 @@ Here is an image of an example, running this from Postman:
 
 # Test and Run with Docker
 
-For test the service with Docker you first have installed Docker on your machine.
+For test the service with Docker you first need to have Docker installed on your machine.
 
-For test the service on you local machine you need run Docker Registry container with this command in a port:
+For test the service on you local machine you need run Docker Registry Container with this command in a port:
 
-`docker run -d --name registry -p portNumber:portNumber registry:latest`
+`docker run -d --name registry -p {portDockerRegistry}:{portDockerRegistry} registry:latest`
 
 Run this command in the project, this will build tha Docker's image:
 
 `mvn install dockerfile:build`
 
-Now you need to tag and publish the image into the loca repository, with this command:
+Now you need to tag and publish the image into the local repository, with this command:
 
 `docker tag ${userName}/robotrunnerserviceclient:0.0.1 localhost {portDockerRegistry}/${userName}/robotrunnerserviceclient:0.0.1`
 
-`docker push localhost:portDockerRegistry/${userName}/robotrunnerserviceclient:0.0.1`
+`docker push localhost:{portDockerRegistry}/${userName}/robotrunnerserviceclient:0.0.1`
 
 And finally you need to run the docker image with this command:
 
 `docker run -p 8080:8080 -t localhost:{portDockerRegistry}/${userName}/robotrunnerserviceclient:0.0.1`
 
 You should see now the logs from Spring Boot that the service is running.
+
+Now you can send a HTTP POST to this route:
+
+`localhost:8080/run`
