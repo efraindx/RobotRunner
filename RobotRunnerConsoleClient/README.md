@@ -1,6 +1,6 @@
 # RobotRunnerConsoleClient
 
-For Test and Run this client run this command:
+To test and Run this client run this command:
 
 `mvn clean compile assembly:single`
 
